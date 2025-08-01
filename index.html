@@ -1,144 +1,122 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>이제원의 포트폴리오</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f4f6f8;
-      margin: 0;
-      padding: 0;
-      color: #333;
-    }
-
-    header {
-      background-color: #2c3e50;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-
-    section {
-      background-color: white;
-      margin: 20px auto;
-      padding: 20px;
-      max-width: 800px;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-
-    h2 {
-      color: #2980b9;
-      border-bottom: 2px solid #ecf0f1;
-      padding-bottom: 5px;
-    }
-
-    ul, ol {
-      padding-left: 20px;
-    }
-
-    li {
-      margin-bottom: 8px;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 10px;
-    }
-
-    th {
-      background-color: #3498db;
-      color: white;
-      padding: 10px;
-    }
-
-    td {
-      background-color: #ecf0f1;
-      padding: 10px;
-      border: 1px solid #bdc3c7;
-    }
-
-    footer {
-      text-align: center;
-      padding: 10px;
-      background-color: #2c3e50;
-      color: white;
-      margin-top: 40px;
-    }
-
-    em {
-      color: #f1c40f;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="프론트엔드 개발자를 꿈꾸는 이제원의 프로젝트 경험과 포트폴리오입니다." />
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body>
 
+<body>
   <header>
     <h1>이제원의 포트폴리오</h1>
-    <p><em>프론트엔드 개발자를 꿈꾸는 학생입니다.</em></p>
+    <strong>프론트엔드 개발자를 꿈꾸는 학생입니다.</strong>
   </header>
 
-  <section>
-    <h2>기본 정보</h2>
-    <ul>
-      <li><strong>이름:</strong> 이제원</li>
-      <li><strong>직업:</strong> 휴학생</li>
-      <li><strong>학습 과정:</strong> 프로그래머스 프론트엔드 데브코스</li>
-    </ul>
-  </section>
+  <nav>
+    <button id="btnProfile" class="active">Profile</button>
+    <button id="btnProjects">Projects</button>
+  </nav>
 
-  <section>
-    <h2>기술 스택</h2>
-    <ol>
-      <li>Java</li>
-      <li>R</li>
-      <li>Python / Streamlit</li>
-      <li>MySQL</li>
-      <li>Unity3D / C#</li>
-      <li>HTML / CSS / JavaScript</li>
-    </ol>
-  </section>
+  <main>
+    <section id="profile" class="active">
+      <h2>자기소개</h2>
+      <div class="project">
+        <p>
+          안녕하세요, 저는 이제원입니다.<br />
+          2학년까지 대학을 다니다가 휴학 후 개인 공부를 하다가 이번 데브코스에 참가하게 되었습니다.<br />
+          재학 중에는 데이터베이스, 게임 개발 등 프로젝트를 경험해봤으며<br />
+          현재는 프론트엔드 개발 공부에 집중하고 있습니다.
+        </p>
+      </div>
 
-  <section>
-    <h2>프로젝트 경험</h2>
-    <table>
-      <thead>
-        <tr>
-          <th>프로젝트명</th>
-          <th>기술</th>
-          <th>설명</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>웹 인터페이스를 통한<br>데이터베이스 시각화</td>
-          <td>MySQL, Python, Streamlit</td>
-          <td>Streamlit을 활용해 DB를 시각화하고 웹을 통해<br>직접 DB를 조작할 수 있도록 구현</td>
-        </tr>
-        <tr>
-          <td>모바일 게임 제작</td>
-          <td>Unity3D, C#</td>
-          <td>Unity3D로 Android에서 실행되는 3D 모바일 게임 개발</td>
-        </tr>
-        <tr>
-          <td>여행사 웹 페이지 클론코딩</td>
-          <td>HTML, CSS, JavaScript</td>
-          <td>프론트엔드 입문 교재의 최종 예제 클론코딩</td>
-        </tr>
-      </tbody>
-    </table>
-  </section>
+      <h2>연락처</h2>
+      <div class="project">
+        <p>
+          📱 연락처: 010-2681-0469<br />
+          📧 이메일: toneba3296@gmail.com<br />
+          💼 깃허브: <a href="https://github.com/peachPetal" target="_blank">https://github.com/peachPetal</a>
+        </p>
+      </div>
+    </section>
 
-  <section>
-    <h2>목표</h2>
-    <p>프론트엔드 개발 능력을 길러서 <strong>데이터 분석과 웹 개발 역량을 모두 갖춘 개발자</strong>로 성장하는 것이 목표입니다.</p>
-  </section>
+    <section id="projects">
+      <h2>프로젝트 경험</h2>
+      <div class="projects">
+        <div class="left-column">
+          <div class="project">
+            <div class="project-title">1. 데이터베이스 모델링 및 웹 UI로 시각화</div>
+            <p>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" class="logo" alt="MySQL 로고" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="logo" alt="Python 로고" />
+              <img src="https://streamlit.io/images/brand/streamlit-logo-secondary-colormark-darktext.svg" class="logo" style="height: 20px" alt="Streamlit 로고" />
+            </p>
+            <p>
+              스프레드 시트의 데이터를 DB 모델링 후 Streamlit st.connection 모듈을 통해<br />
+              MySQL 로컬 환경에서 웹 UI로 DB 조회 및 조작이 가능하도록 구현했습니다.
+            </p>
+            <p>
+              🔗 <a href="https://github.com/peachPetal/PythonStreamlit.git" target="_blank">깃허브 링크 바로가기</a>
+            </p>
+          </div>
 
-  <footer>
-    <p>작성일: 2025-07-31</p>
-  </footer>
+          <div class="project">
+            <div class="project-title">3. 여행사 웹 페이지 클론코딩</div>
+            <p>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="logo" alt="HTML" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="logo" alt="CSS" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="logo" alt="JavaScript" />
+            </p>
+            <p>
+              Do It HTML CSS JavaScript 교재의 최종 실습 예제인<br />
+              제주도 여행사 웹사이트를 바닐라 JS로 클론코딩하여<br />
+              Github Pages로 배포하였습니다.
+            </p>
+            <p>
+              🌐 <a href="https://peachpetal.github.io/DoitFinal/" target="_blank">배포된 사이트 보기</a>
+            </p>
+          </div>
+        </div>
 
+        <div class="right-column">
+          <div class="project">
+            <div class="project-title">2. 모바일 3D 게임 제작</div>
+            <p>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg" class="logo" alt="Unity" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" class="logo" alt="C#" />
+            </p>
+            <p>
+              Unity3D로 Android에서 실행되는 3D 모바일 게임을 개발하였습니다.<br />
+              공을 조이스틱과 점프 버튼으로 조작하여 최대한 많은 코인을 먹으면서<br />
+              빠르게 모든 스테이지를 클리어하는 것을 목표로 하는 게임입니다.
+            </p>
+            <img src="mobileGame.png" alt="모바일 게임 이미지" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const btnProfile = document.getElementById('btnProfile');
+    const btnProjects = document.getElementById('btnProjects');
+    const sectionProfile = document.getElementById('profile');
+    const sectionProjects = document.getElementById('projects');
+
+    btnProfile.addEventListener('click', () => {
+      btnProfile.classList.add('active');
+      btnProjects.classList.remove('active');
+      sectionProfile.classList.add('active');
+      sectionProjects.classList.remove('active');
+    });
+
+    btnProjects.addEventListener('click', () => {
+      btnProjects.classList.add('active');
+      btnProfile.classList.remove('active');
+      sectionProjects.classList.add('active');
+      sectionProfile.classList.remove('active');
+    });
+  </script>
 </body>
 </html>

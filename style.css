@@ -1,0 +1,131 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, white 0%, lightgray 100%);
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+header {
+    background: linear-gradient(to right, pink, lightblue);
+    color: white;
+    text-align: center;
+    padding: 3rem 1rem 2rem;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+nav button {
+    background: none;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    color: gray;
+    border-bottom: 3px solid transparent;
+    transition: color 0.3s, border-bottom-color 0.3s;
+    font-weight: 600;
+}
+
+nav button.active,
+nav button:hover {
+    color: hotpink;
+    border-bottom-color: hotpink;
+}
+
+section {
+    padding: 2rem 10%;
+    display: none;
+}
+
+section.active {
+    display: block;
+}
+
+h2 {
+    border-bottom: 2px solid darkgray;
+    padding-bottom: 0.5rem;
+    color: dimgray;
+    margin-bottom: 1rem;
+}
+
+ul, ol {
+    margin-left: 1.5rem;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.left-column {
+    flex: 1;
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.right-column {
+    flex: 1;
+    min-width: 280px;
+}
+
+.project {
+    background-color: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+.project img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 1rem;
+    border: 1px solid gray;
+}
+
+.project-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.logo {
+    height: 24px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+a {
+    color: hotpink;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
