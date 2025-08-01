@@ -1,5 +1,0 @@
-streamlit>=1.27
-streamlit-connectors
-sqlalchemy
-pymysql
-pandas
