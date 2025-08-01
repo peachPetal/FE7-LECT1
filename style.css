@@ -129,3 +129,12 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+.video-container img,
+.video-container video {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}

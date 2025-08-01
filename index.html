@@ -88,10 +88,16 @@
             </p>
             <p>
               Unity3D로 Android에서 실행되는 3D 모바일 게임을 개발하였습니다.<br />
-              공을 조이스틱과 점프 버튼으로 조작하여 최대한 많은 코인을 먹으면서<br />
-              빠르게 모든 스테이지를 클리어하는 것을 목표로 하는 게임입니다.
+              공을 조이스틱과 점프 버튼으로 조작하여 스테이지의 모든 코인을 먹으면서<br />
+              최대한 빠르게 모든 스테이지를 클리어하는 것을 목표로 하는 게임입니다.
             </p>
-            <img src="mobileGame.png" alt="모바일 게임 이미지" />
+              <div class="video-container" id="mobileGameProject" style="position: relative; width: fit-content;">
+                <img id="mobileGameThumbnail" src="mobileGame.png" alt="모바일 게임 이미지" style="cursor: pointer; display: block;" />
+                <video id="mobileGameVideo" controls style="display: none; width: 100%; height: auto;">
+                  <source src="gamePlay.mp4" type="video/mp4" />
+                  브라우저가 video 태그를 지원하지 않습니다.
+                </video>
+              </div>
           </div>
         </div>
       </div>
@@ -116,6 +122,15 @@
       btnProfile.classList.remove('active');
       sectionProjects.classList.add('active');
       sectionProfile.classList.remove('active');
+    });
+    
+    const mobileGameThumbnail = document.getElementById('mobileGameThumbnail');
+    const mobileGameVideo = document.getElementById('mobileGameVideo');
+
+    mobileGameThumbnail.addEventListener('click', () => {
+      mobileGameThumbnail.style.display = 'none';
+      mobileGameVideo.style.display = 'block';
+      mobileGameVideo.play();
     });
   </script>
 </body>
